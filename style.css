@@ -5,6 +5,9 @@ body, h1, h2, p, ul, li {
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* Basic page styling */
 body {
     font-family: Arial, sans-serif;

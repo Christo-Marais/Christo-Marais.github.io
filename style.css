@@ -1,0 +1,217 @@
+/* Reset some basic styles for consistency across browsers */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark blue accents */
+:root {
+    --accent-color: #4a90e2;
+}
+
+/* Navigation Styling */
+nav {
+    background: var(--accent-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* Header Section Styling */
+header {
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 130px; /* Adjusted margin to move the text to the right */
+}
+
+.header-text h1 {
+    font-size: 3em;
+    color: var(--accent-color);
+    margin-left: 130px; /* Adjusted margin to move the name slightly to the right */
+}
+
+.header-text p {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.header-text .cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1px;
+    text-align: left;
+    margin-left: 130px;
+}
+
+.header-text .cv-button:hover {
+    background: #357abd;
+}
+
+header img {
+    max-width: 165px;
+    width: 165px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 130px; /* Adjusted to move the image slightly to the right */
+}
+
+/* Main Content Section Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flex container for main content */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Education Section Styling */
+section#education {
+    width: 650px; /* Adjust width as needed */
+    flex-shrink: 0; /* Prevent shrinking */
+    background: #fff;
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section#education h2 {
+    text-align: center;
+}
+
+section#education p {
+    text-align: left;
+}
+
+/* Flex container for About Me and Projects sections */
+.side-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    align-items: stretch; /* Ensure sections stretch to match height */
+}
+
+section#about,
+section#projects {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section#about h2,
+section#projects h2 {
+    text-align: center;
+}
+
+section#about {
+    margin-right: 20px; /* Space between sections */
+}
+
+section#projects {
+    /* No additional margin needed here */
+}
+
+/* Links Section Styling */
+.links-section {
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px; /* Space between My Links and sections above */
+}
+
+.links-section h2 {
+    text-align: center;
+}
+
+.links-section ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removed the bullet points */
+}
+
+.links-section li {
+    flex: 1;
+    text-align: center;
+}
+
+.links-section li a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Increased font size */
+}
+
+.links-section li a:hover {
+    color: #357abd;
+}
+
+/* Ensure paragraphs break correctly */
+p {
+    white-space: pre-wrap; /* Preserves whitespace and line breaks */
+}
+
+/* Specific rule for Projects section to avoid extra line breaks */
+#projects p {
+    white-space: normal; /* Allow text to wrap normally */
+}
+

@@ -1,4 +1,4 @@
-/* Reset some basic styles for consistency across browsers */
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -122,7 +122,7 @@ main {
 /* Education Section Styling */
 section#education {
     width: 650px; 
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0;
     background: #fff;
     padding: 20px;
     border: 2px solid var(--accent-color);
@@ -166,10 +166,6 @@ section#about {
     margin-right: 20px; /* Space between sections */
 }
 
-section#projects {
-    /* No additional margin needed here */
-}
-
 /* Links Section Styling */
 .links-section {
     border: 2px solid var(--accent-color);
@@ -187,7 +183,7 @@ section#projects {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    list-style: none; /* Removed the bullet points */
+    list-style: none;
 }
 
 .links-section li {
@@ -210,11 +206,11 @@ section#projects {
 
 /* Ensure paragraphs break correctly */
 p {
-    white-space: pre-wrap; /* Preserves whitespace and line breaks */
+    white-space: pre-wrap; 
 }
 
 /* Specific rule for Projects section to avoid extra line breaks */
 #projects p {
-    white-space: normal; /* Allow text to wrap normally */
+    white-space: normal;
 }
 
